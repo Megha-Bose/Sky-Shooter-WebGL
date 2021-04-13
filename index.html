@@ -1,0 +1,52 @@
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Eater' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Flavors' rel='stylesheet'>
+    <title>Sky Shooter</title>
+
+    <style>
+    	body{
+    		margin: 0;
+    		overflow: hidden;
+            color:white;
+            background-color: black;
+    	}
+
+        #title {
+            font-size: 3em;
+            font-family: 'Eater';
+            color: yellow;
+            width:40%;
+            Text-align:center;
+            float:left;
+        }
+
+        #score, #health, #time, #text {
+            font-size: 2em;
+            width:10%;
+            Text-align:center;
+            float:left;
+            font-family: 'Flavors';
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+        <div class="title" id="title">Sky  Shooter</div>
+        <div class="text" id="text">Score:</div>
+        <div id="score" class="score">0</div>
+        <div class="text" id="text">Health:</div>
+        <div id="health" class="health">0</div>
+        <div class="text" id="text">Time:</div>
+        <div id="time" class="time">100</div>
+    </p>
+    
+    <canvas id="myCanvas"></canvas>
+
+    <script src="./js/three.js"></script>
+    <script src="./js/GLTFLoader.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
