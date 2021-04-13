@@ -10,7 +10,7 @@ var num_bullets = 2
 var step_size = 0.5
 var score = 0;
 var health = 0;
-var time = 500;
+var time = 4000;
 
 var moveForward = false;
 var moveBackward = false;
@@ -48,10 +48,10 @@ function init()
     scene.background = new THREE.Color( 0x000 );
     scene.fog = new THREE.Fog( 0xFFFFFF, 0, 300 );
 
-    loader.load('../plane.glb', handle_plane_load);
+    loader.load('../assets/plane.glb', handle_plane_load);
     for(var i = 0; i< num_enemies; i++)
     {
-        loader.load('../enemy.glb', handle_enemy_load);
+        loader.load('../assets/enemy.glb', handle_enemy_load);
     }    
 }
 
@@ -214,7 +214,7 @@ function shoot_bullets()
 {
     for(var i = 0; i < num_bullets; i++)
     {
-        loader.load('../bullet.glb', handle_bullet_load);
+        loader.load('../assets/bullet.glb', handle_bullet_load);
     }
 }
 
