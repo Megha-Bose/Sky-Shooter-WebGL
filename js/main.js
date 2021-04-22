@@ -14,7 +14,7 @@ var stars = []
 var step_size = 0.5
 var score = 0;
 var health = 0;
-var time = 10000;
+var time = 1000;
 
 var moveForward = false;
 var moveBackward = false;
@@ -394,11 +394,18 @@ function get_score()
     document.getElementById('score').innerHTML = score;
 }
 
+function get_end_score()
+{
+    var query = window.location.href;
+    var score_val= query.split('=')[1];
+    document.getElementById("score_val").innerHTML = score_val;
+}
+
 function update_time()
 {
     if(time == 0)
     {
-        window.open("../game_over.html", "_self");
+        window.open("../game_over.html?score=" + score, "_self");
     }
     time -= 1;
     document.getElementById('time').innerHTML = Math.round(time/100);

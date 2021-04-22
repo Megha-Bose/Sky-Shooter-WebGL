@@ -30,7 +30,7 @@
             float:left;
         }
 
-        #score, #text {
+        #score_val, #text {
             font-size: 2em;
             width:100%;
             text-align:center;
@@ -40,13 +40,13 @@
 
     </style>
 </head>
-<body onload=get_score()>
+<body onload="get_end_score()">
     <p>
         <div id="title">Sky Shooter</div>
         <div id="text"></div>
         <div class="game_over" id="game_over">Game Over</div>
         <div class="text" id="text"> Your Score:</div>
-        <div id="score" class="score"></div>
+        <div id="score_val" class="score"></div>
     </p>
     
     <canvas id="myCanvas"></canvas>
