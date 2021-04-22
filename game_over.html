@@ -38,6 +38,15 @@
             font-family: 'Flavors';
         }
 
+        #coin {
+            width: 50px;
+            height: 50px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+            background: rgb(214, 214, 23);
+        }
+
     </style>
 </head>
 <body onload="get_end_score()">
@@ -45,8 +54,12 @@
         <div id="title">Sky Shooter</div>
         <div id="text"></div>
         <div class="game_over" id="game_over">Game Over</div>
-        <div class="text" id="text"> Your Score:</div>
-        <div id="score_val" class="score"></div>
+        <div class="text" id="text"> You get:</div>
+        <div id="score_val" class="score"> 
+        </div>
+        <div class="text" id="text">
+            <img src="assets/images/coin.png" width="60" height="60">
+        </div>        
     </p>
     
     <canvas id="myCanvas"></canvas>

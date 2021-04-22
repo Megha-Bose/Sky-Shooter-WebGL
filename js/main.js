@@ -14,7 +14,7 @@ var stars = []
 var step_size = 0.5
 var score = 0;
 var health = 0;
-var time = 1000;
+var time = 6000;
 
 var moveForward = false;
 var moveBackward = false;
