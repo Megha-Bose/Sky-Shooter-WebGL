@@ -7,4 +7,4 @@ Shooter game made using WebGL and three.js
 2. `python -m http.server 8000`
 
 ## Trailer
-[Watch Game Trailer](https://drive.google.com/file/d/19oFObYiFNZ2ORbb6ePWieDanRJJraurQ/view?usp=sharing)
+[Watch Game Trailer](https://drive.google.com/file/d/19ykv3ZpZvkih3KzMnqfEGLmDQ9Q3ckKV/view?usp=sharing)
